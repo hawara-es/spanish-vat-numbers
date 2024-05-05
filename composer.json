@@ -1,0 +1,26 @@
+{
+    "name": "hawara/standard-codes",
+    "description": "Standard code validations (like Spanish VAT numbers, or IBANs) implemented in PHP.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hawara\\StandardCodes\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos Capote Pérez-Andreu",
+            "email": "carlos.capote@hawara.es"
+        }
+    ],
+    "require-dev": {
+        "pestphp/pest": "^2.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
