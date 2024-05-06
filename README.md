@@ -4,7 +4,8 @@ This library provides validations for standard codes (like Spanish VAT numbers, 
 
 ## Usage
 
-- [Validation of Spanish VAT Numbers (NIF/NIE)](docs/nif-nie.md)
+- [Validation of Spanish VAT Numbers for Individuals (NIF/NIE)](docs/nif-nie.md)
+- [Validation of Spanish VAT Numbers for Organizations (CIF)](docs/cif.md)
 
 ## Development
 

@@ -22,7 +22,7 @@ $result = $validator->validate($value);
 
 ### Check the Result
 
-All validation results will implement the `ValidationResult` interface.
+All validation results implement the `ValidationResult` interface.
 
 ```php
 use Hawara\StandardCodes\Contracts\ValidationResult;
@@ -30,7 +30,7 @@ use Hawara\StandardCodes\Contracts\ValidationResult;
 $result instanceof ValidationResult; // true
 ```
 
-What implies that they will implement two methods:
+What implies that they implement two methods:
 
 ```php
     public function isValid(): bool;
@@ -41,7 +41,7 @@ As its name suggests, the `isValid` method returns a boolean indicating whether 
 
 The `errorMessage` method returns a string with the reason of the validation failure. If the value was valid, it returns an empty string.
 
-There NIF/NIE validator returns specific validation result objects for certain errors.
+The NIF/NIE validator returns specific validation result objects for certain errors.
 
 #### Must Be a String
 

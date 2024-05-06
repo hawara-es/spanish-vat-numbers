@@ -60,8 +60,9 @@ class NifNieValidator implements Validator
         }
 
         $rest = (int) $digits % 23;
+        $calculated = self::MAPPING[$rest];
 
-        if (self::MAPPING[$rest] !== $control) {
+        if ($calculated !== $control) {
             return new InvalidControlDigitResult;
         }
 
