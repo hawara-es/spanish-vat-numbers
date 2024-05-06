@@ -70,11 +70,11 @@ class NifNieValidator implements Validator
 
     private function isNie(string $value): bool
     {
-        return preg_match('/^[X|Y|Z][0-9]{7}[A-Z]$/', $value) !== false;
+        return preg_match('/^[X|Y|Z][0-9]{7}[A-Z]$/', $value) !== 0;
     }
 
     private function isNif(string $value): bool
     {
-        return preg_match('/^[0-9]{8}[A-Z]$/', $value) !== false;
+        return preg_match('/^[0-9]{8}[A-Z]$/', $value) !== 0;
     }
 }
