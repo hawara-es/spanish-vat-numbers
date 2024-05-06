@@ -1,4 +1,5 @@
 <?php
+
 namespace Hawara\StandardCodes\Contracts;
 
 interface ValidationResult

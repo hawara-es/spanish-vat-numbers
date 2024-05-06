@@ -9,7 +9,8 @@ class ValidationResult implements ValidationResultContract
     public function __construct(
         protected readonly bool $isValid,
         protected readonly string $errorMessage = '',
-    ) {}
+    ) {
+    }
 
     public function isValid(): bool
     {
