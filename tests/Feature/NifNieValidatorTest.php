@@ -35,7 +35,7 @@ it('provides specific error answers for non string values', function ($value) {
 })->with([
     false,
     null,
-    fn() => [],
+    fn () => [],
 ]);
 
 it('provides specific error answers for strings that do not match the nif/nie patterns', function ($value) {
@@ -45,7 +45,7 @@ it('provides specific error answers for strings that do not match the nif/nie pa
 })->with([
     '',
     '1A',
-    'AAAABBBBC'
+    'AAAABBBBC',
 ]);
 
 it('can tell if a nie is valid', function ($value) {

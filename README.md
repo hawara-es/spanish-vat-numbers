@@ -47,17 +47,20 @@ $result->errorMessage() // "The value must follow the correct pattern for NIF's 
 ### Code Style
 
 ```bash
-vendor/bin/pint
+composer lint
+# or vendor/bin/pint
 ```
 
 ### Automated Tests
 
 ```bash
-vendor/bin/pest
+composer test
+# or vendor/bin/pest
 ```
 
 ### Interactive Tests
 
 ```bash
-vendor/bin/psysh
+composer repl
+# or vendor/bin/psysh
 ```
