@@ -2,7 +2,11 @@
 
 This library provides validations for Spanish VAT numbers in PHP.
 
+Although VAT numbers for individuals and organizations are all legally referred as "Número de Identificación Fiscal" (NIF), they still follow different algorithms for their control digits.
+
 ## Usage
+
+Please, check the specific documentation for each validation type:
 
 - [Validation of Spanish VAT Numbers for Individuals (NIF/NIE)](docs/nif-nie.md)
 - [Validation of Spanish VAT Numbers for Organizations (CIF)](docs/cif.md)
