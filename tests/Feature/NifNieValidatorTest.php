@@ -1,9 +1,9 @@
 <?php
 
-use Hawara\StandardCodes\Results\NifNie\InvalidControlDigitResult;
-use Hawara\StandardCodes\Results\NifNie\MustBeAStringResult;
-use Hawara\StandardCodes\Results\NifNie\MustFollowThePatternResult;
-use Hawara\StandardCodes\Validators\NifNieValidator;
+use Hawara\VatNumbers\Results\NifNie\InvalidControlDigitResult;
+use Hawara\VatNumbers\Results\NifNie\MustBeAStringResult;
+use Hawara\VatNumbers\Results\NifNie\MustFollowThePatternResult;
+use Hawara\VatNumbers\Validators\NifNieValidator;
 
 it('can tell if a nif is valid', function ($value) {
     $result = (new NifNieValidator)->validate($value);

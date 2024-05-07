@@ -1,8 +1,8 @@
 <?php
 
-namespace Hawara\StandardCodes\Results\NifNie;
+namespace Hawara\VatNumbers\Results\NifNie;
 
-use Hawara\StandardCodes\ValidationResult;
+use Hawara\VatNumbers\ValidationResult;
 
 class MustBeAStringResult extends ValidationResult
 {

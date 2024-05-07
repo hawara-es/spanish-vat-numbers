@@ -1,4 +1,4 @@
-# Hawara :: Standard Codes
+# Hawara :: Spanish VAT Numbers
 
 ## NIF/NIE
 
@@ -7,7 +7,7 @@
 To use the NIF/NIE validation, first instance a `NifNieValidator`:
 
 ```php
-use Hawara\StandardCodes\Validators\NifNieValidator;
+use Hawara\VatNumbers\Validators\NifNieValidator;
 
 $validator = new NifNieValidator;
 ```
@@ -25,7 +25,7 @@ $result = $validator->validate($value);
 All validation results implement the `ValidationResult` interface.
 
 ```php
-use Hawara\StandardCodes\Contracts\ValidationResult;
+use Hawara\VatNumbers\Contracts\ValidationResult;
 
 $result instanceof ValidationResult; // true
 ```
@@ -48,7 +48,7 @@ The NIF/NIE validator returns specific validation result objects for certain err
 When the tested value is not even a string, a `MustBeAStringResult` object is returned.
 
 ```php
-use Hawara\StandardCodes\Results\NifNie\MustBeAStringResult;
+use Hawara\VatNumbers\Results\NifNie\MustBeAStringResult;
 
 $result = $validator->validate((object) []);
 
@@ -60,7 +60,7 @@ $result instanceof MustBeAStringResult; // true
 When the tested value does not follow the pattern of a NIF or NIE, a `MustFollowThePatternResult` object is returned.
 
 ```php
-use Hawara\StandardCodes\Results\NifNie\MustBeAStringResult;
+use Hawara\VatNumbers\Results\NifNie\MustBeAStringResult;
 
 $result = $validator->validate('This does not follow the pattern');
 
@@ -72,7 +72,7 @@ $result instanceof MustBeAStringResult; // true
 When the tested value does not have it's correct control digit, a `InvalidControlDigit` object is returned.
 
 ```php
-use Hawara\StandardCodes\Results\NifNie\InvalidControlDigitResult;
+use Hawara\VatNumbers\Results\NifNie\InvalidControlDigitResult;
 
 $result = $validator->validate('00000000A');
 

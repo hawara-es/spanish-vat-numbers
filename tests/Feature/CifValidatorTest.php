@@ -1,9 +1,9 @@
 <?php
 
-use Hawara\StandardCodes\Results\Cif\InvalidControlDigitResult;
-use Hawara\StandardCodes\Results\Cif\MustBeAStringResult;
-use Hawara\StandardCodes\Results\Cif\MustFollowThePatternResult;
-use Hawara\StandardCodes\Validators\CifValidator;
+use Hawara\VatNumbers\Results\Cif\InvalidControlDigitResult;
+use Hawara\VatNumbers\Results\Cif\MustBeAStringResult;
+use Hawara\VatNumbers\Results\Cif\MustFollowThePatternResult;
+use Hawara\VatNumbers\Validators\CifValidator;
 
 it('can tell if a cif is valid', function ($value) {
     $result = (new CifValidator)->validate($value);

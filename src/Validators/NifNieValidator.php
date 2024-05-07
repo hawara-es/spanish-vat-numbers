@@ -1,13 +1,13 @@
 <?php
 
-namespace Hawara\StandardCodes\Validators;
+namespace Hawara\VatNumbers\Validators;
 
-use Hawara\StandardCodes\Contracts\ValidationResult as ValidationResultContract;
-use Hawara\StandardCodes\Contracts\Validator;
-use Hawara\StandardCodes\Results\NifNie\InvalidControlDigitResult;
-use Hawara\StandardCodes\Results\NifNie\MustBeAStringResult;
-use Hawara\StandardCodes\Results\NifNie\MustFollowThePatternResult;
-use Hawara\StandardCodes\ValidationResult;
+use Hawara\VatNumbers\Contracts\ValidationResult as ValidationResultContract;
+use Hawara\VatNumbers\Contracts\Validator;
+use Hawara\VatNumbers\Results\NifNie\InvalidControlDigitResult;
+use Hawara\VatNumbers\Results\NifNie\MustBeAStringResult;
+use Hawara\VatNumbers\Results\NifNie\MustFollowThePatternResult;
+use Hawara\VatNumbers\ValidationResult;
 
 /**
  * @link https://www.interior.gob.es/opencms/ca/servicios-al-ciudadano/tramites-y-gestiones/dni/calculo-del-digito-de-control-del-nif-nie/

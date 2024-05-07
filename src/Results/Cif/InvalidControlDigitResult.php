@@ -1,8 +1,8 @@
 <?php
 
-namespace Hawara\StandardCodes\Results\Cif;
+namespace Hawara\VatNumbers\Results\Cif;
 
-use Hawara\StandardCodes\ValidationResult;
+use Hawara\VatNumbers\ValidationResult;
 
 class InvalidControlDigitResult extends ValidationResult
 {

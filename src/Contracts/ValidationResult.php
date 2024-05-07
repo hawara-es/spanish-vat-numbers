@@ -1,6 +1,6 @@
 <?php
 
-namespace Hawara\StandardCodes\Contracts;
+namespace Hawara\VatNumbers\Contracts;
 
 interface ValidationResult
 {

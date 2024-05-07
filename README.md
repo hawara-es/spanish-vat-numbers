@@ -1,6 +1,6 @@
-# Hawara :: Standard Codes
+# Hawara :: Spanish VAT Numbers
 
-This library provides validations for standard codes (like Spanish VAT numbers, or IBANs) in PHP.
+This library provides validations for Spanish VAT numbers in PHP.
 
 ## Usage
 

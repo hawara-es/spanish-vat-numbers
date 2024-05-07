@@ -1,8 +1,8 @@
 <?php
 
-namespace Hawara\StandardCodes;
+namespace Hawara\VatNumbers;
 
-use Hawara\StandardCodes\Contracts\ValidationResult as ValidationResultContract;
+use Hawara\VatNumbers\Contracts\ValidationResult as ValidationResultContract;
 
 class ValidationResult implements ValidationResultContract
 {

@@ -1,11 +1,11 @@
 {
-    "name": "hawara/standard-codes",
-    "description": "Standard code validations (like Spanish VAT numbers, or IBANs) implemented in PHP.",
+    "name": "hawara/spanish-vat-numbers",
+    "description": "Spanish VAT number validators for PHP.",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Hawara\\StandardCodes\\": "src/",
+            "Hawara\\VatNumbers\\": "src/",
             "Tests\\": "tests/"
         }
     },

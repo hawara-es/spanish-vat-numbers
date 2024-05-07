@@ -1,13 +1,13 @@
 <?php
 
-namespace Hawara\StandardCodes\Validators;
+namespace Hawara\VatNumbers\Validators;
 
-use Hawara\StandardCodes\ValidationResult;
-use Hawara\StandardCodes\Contracts\Validator;
-use Hawara\StandardCodes\Results\Cif\MustBeAStringResult;
-use Hawara\StandardCodes\Results\Cif\MustFollowThePatternResult;
-use Hawara\StandardCodes\Contracts\ValidationResult as ValidationResultContract;
-use Hawara\StandardCodes\Results\Cif\InvalidControlDigitResult;
+use Hawara\VatNumbers\ValidationResult;
+use Hawara\VatNumbers\Contracts\Validator;
+use Hawara\VatNumbers\Results\Cif\MustBeAStringResult;
+use Hawara\VatNumbers\Results\Cif\MustFollowThePatternResult;
+use Hawara\VatNumbers\Contracts\ValidationResult as ValidationResultContract;
+use Hawara\VatNumbers\Results\Cif\InvalidControlDigitResult;
 
 /**
  * @link http://www.migoia.com/migoia/util/NIF/NIF.pdf

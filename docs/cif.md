@@ -1,4 +1,4 @@
-# Hawara :: Standard Codes
+# Hawara :: Spanish VAT Numbers
 
 ## CIF
 
@@ -7,7 +7,7 @@
 To use the CIF validation, first instance a `CifValidator`:
 
 ```php
-use Hawara\StandardCodes\Validators\CifValidator;
+use Hawara\VatNumbers\Validators\CifValidator;
 
 $validator = new CifValidator;
 ```
@@ -29,7 +29,7 @@ As with [NIF/NIE validations](nif-nie.md), all validation results implement the 
 When the tested value is not even a string, a `MustBeAStringResult` object is returned.
 
 ```php
-use Hawara\StandardCodes\Results\Cif\MustBeAStringResult;
+use Hawara\VatNumbers\Results\Cif\MustBeAStringResult;
 
 $result = $validator->validate((object) []);
 
@@ -41,7 +41,7 @@ $result instanceof MustBeAStringResult; // true
 When the tested value does not follow the pattern of a CIF, a `MustFollowThePatternResult` object is returned.
 
 ```php
-use Hawara\StandardCodes\Results\Cif\MustBeAStringResult;
+use Hawara\VatNumbers\Results\Cif\MustBeAStringResult;
 
 $result = $validator->validate('This does not follow the pattern');
 
@@ -53,7 +53,7 @@ $result instanceof MustBeAStringResult; // true
 When the tested value does not have it's correct control digit, a `InvalidControlDigit` object is returned.
 
 ```php
-use Hawara\StandardCodes\Results\Cif\InvalidControlDigitResult;
+use Hawara\VatNumbers\Results\Cif\InvalidControlDigitResult;
 
 $result = $validator->validate('A0000000A');
 
